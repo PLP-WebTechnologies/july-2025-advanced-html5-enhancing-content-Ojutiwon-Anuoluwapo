@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhancing HTML5 Content &amp; Mastering Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      max-width: 800px;
+    }
+    header, section, footer {
+      margin-bottom: 2em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 0.5em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    fieldset {
+      border: 1px solid #bbb;
+      padding: 1em;
+      margin: 1em 0;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 0.5em;
+    }
+    label {
+      display: block;
+      margin-top: 0.5em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.2em;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 1em;
+      padding: 0.7em 1.2em;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    img, video {
+      max-width: 100%;
+      height: 80%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhancing HTML5 Content &amp; Mastering Forms</h1>
+    <p>This page demonstrates usage of lists, tables, media, and an accessible validated form using only HTML5 features.</p>
+  </header>
+
+  <!-- Section: Lists -->
+  <section>
+    <h2>Useful Websites for Learning HTML5</h2>
+    <p>Here is a list of some great resources:</p>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs: HTML</a></li>
+      <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools HTML Tutorial</a></li>
+      <li><a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer">HTML Living Standard Spec</a></li>
+    </ul>
+  </section>
+
+  <!-- Section: Tables -->
+  <section>
+    <h2>Sample Product Pricing Table</h2>
+    <table>
+      <caption>Product Prices as of August 2025</caption>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Price (Naira)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Wireless Mouse</td>
+          <td>Electronics</td>
+          <td>250,00</td>
+        </tr>
+        <tr>
+          <td>Notebook</td>
+          <td>Stationery</td>
+          <td>34,900</td>
+        </tr>
+        <tr>
+          <td>Bluetooth Speaker</td>
+          <td>Electronics</td>
+          <td>450,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section: Media -->
+  <section>
+    <h2>Embedded Media Content</h2>
+    <figure>
+      <img src="leaf-8626541_640.jpg" alt="Sample placeholder image showcasing media embedding">
+      <figcaption>Figure 1: Example placeholder image.</figcaption>
+    </figure>
+
+    <figure>
+      <video controls preload="metadata" aria-label="Sample video demonstrating media element">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm">
+        Your browser does not support the video element.
+      </video>
+      <figcaption>Figure 2: Sample video clip.</figcaption>
+    </figure>
+  </section>
+
+  <!-- Section: Form -->
+  <section>
+    <h2>Contact and Feedback Form</h2>
+    <form action="#" method="post" novalidate>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name <sup>*</sup></label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your full name" minlength="3" required autocomplete="name" />
+
+        <label for="email">Email Address <sup>*</sup></label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required autocomplete="email" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1234567890"
+               pattern="^\+?[0-9\s\-]{7,15}$" title="Enter a valid phone number with 7 to 15 digits" autocomplete="tel" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback Details</legend>
+
+        <label for="subject">Subject <sup>*</sup></label>
+        <select id="subject" name="subject" required>
+          <option value="" disabled selected>Select a subject</option>
+          <option value="general">General Inquiry</option>
+          <option value="bug">Report a Bug</option>
+          <option value="feature">Feature Request</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Message <sup>*</sup></label>
+        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" minlength="10" required></textarea>
+
+        <label for="newsletter">
+          <input type="checkbox" id="newsletter" name="newsletter" />
+          Subscribe to newsletter
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information (Read Only)</legend>
+        <label for="submission-date">Submission Date</label>
+        <input type="text" id="submission-date" name="submission-date" value="2025-08-08" readonly />
+      </fieldset>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anuoluwapo. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
